@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:client": "cd app && npm run build",
     "start:server:dev": "cd server && npm run start:dev",
+    "migration:g": "cd server && npm run migration:g",
+    "migration ": "cd server && npm run migration",
+    "migration:rollback ": "cd server && npm run migration:rollback",
     "start:client:dev": "cd app && npm run start",
     "start:dev": "concurrently \"(npm start --prefix app)\" \"(npm run start:dev --prefix server)\""
   },

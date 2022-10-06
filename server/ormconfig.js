@@ -7,7 +7,7 @@ module.exports = {
   database: process.env.POSTGRES_DATABASE || 'postgres',
   entities: ['dist/**/*.entity.js'],
   migrationsTableName: 'migration',
-  migrations: ['dist/migrations/*.js'],
+  migrations: ['dist/src/migrations/*.js'],
   cli: {
     migrationsDir: 'src/migrations',
   },
